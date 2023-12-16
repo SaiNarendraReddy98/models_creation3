@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+</head>
+<body>
+    <center>
+       <table border="3px">
+        <tr>
+            <th>Empno</th>
+            <th>Ename</th>
+            <th>Job</th>
+            <th>Hiredate</th>
+            <th>Sal</th>
+            <th>Comm</th>
+            <th>Deptno</th>
+        </tr>
+    {% for i in emp %}
+        <tr>
+            <td>{{i.Empno}}</td>
+            <td style="color: rgb(79, 153, 6);">{{i.Ename}}</td>
+            <td style="color: rgb(14, 86, 88);">{{i.Job}}</td>
+            <td>{{i.Hiredate}}</td>
+            <td>{{i.Sal}}</td>
+            <td>{{i.Comm}}</td>
+            <td>{{i.Deptno}}</td>
+        </tr>
+    {% endfor %}
+       </table>
+    </center>
+</body>
+</html>
